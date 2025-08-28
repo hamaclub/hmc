@@ -1,12 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title>タイトル</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>〇〇ソフトテニスクラブ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>見出し</h1>
-    <p>本文</p>
+    <header class="site-header">
+        <div class="container">
+            <h1>〇〇ソフトテニスクラブ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">クラブ紹介</a></li>
+                    <li><a href="#activities">活動内容</a></li>
+                    <li><a href="#news">ニュース</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>最新の活動情報</h2>
+                <p>このセクションに、最新のお知らせや活動の写真を掲載します。</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>クラブ紹介</h2>
+                <p>ここにクラブの歴史や活動理念についての文章を入れます。</p>
+                <div class="image-placeholder"></div>
+            </div>
+        </section>
+
+        <section id="activities" class="section bg-light">
+            <div class="container">
+                <h2>活動内容</h2>
+                <p>練習日時、場所、参加条件などの情報を記載します。</p>
+            </div>
+        </section>
+
+        <section id="news" class="section">
+            <div class="container">
+                <h2>ニュース</h2>
+                <div class="news-list">
+                    <article>
+                        <h3>最新のお知らせタイトル1</h3>
+                        <p>お知らせの本文です。日付：2025年8月29日</p>
+                    </article>
+                    <article>
+                        <h3>最新のお知らせタイトル2</h3>
+                        <p>お知らせの本文です。日付：2025年8月20日</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2>お問い合わせ</h2>
+                <p>このセクションに、連絡先や問い合わせフォームへの案内を入れます。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 〇〇ソフトテニスクラブ</p>
+        </div>
+    </footer>
 </body>
 </html>
