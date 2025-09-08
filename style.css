@@ -67,7 +67,7 @@ body {
   color: var(--bs-secondary) !important;
 }
 
-/* ニュースセクションのスタイル */
+/* お知らせセクションのスタイル */
 #news .list-group-item {
   border-top: 1px solid rgba(0,0,0,.125);
 }
