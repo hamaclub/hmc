@@ -1,6 +1,7 @@
-/* ベースのスタイルは、提供された `carousel.css` を参考に、日本のユーザー向けに調整しました */
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
 
-/* 共通のスタイル */
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -46,10 +47,10 @@ body {
   object-fit: cover; /* 画像がコンテナに収まるように設定 */
 }
 
-/* マーケティングコンテンツ（3つの列）*/
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+
+/* 各ページ共通のメインコンテンツのパディング調整 */
+main.container {
+  padding-top: 4rem;
 }
 
 /* 特集セクション */
@@ -67,20 +68,17 @@ body {
   color: var(--bs-secondary) !important;
 }
 
-/* お知らせセクションのスタイル */
-#news .list-group-item {
+/* お知らせリストのスタイル */
+.list-group-item {
   border-top: 1px solid rgba(0,0,0,.125);
 }
-
-/* ギャラリーの画像に少し影を追加 */
-#gallery img {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+.list-group-item a {
+  font-weight: bold;
+}
+.list-group-item a:hover {
+  color: var(--bs-primary);
 }
 
-#gallery img:hover {
-  transform: scale(1.05);
-}
 
 /* レスポンシブデザイン */
 @media (min-width: 40em) {
