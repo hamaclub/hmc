@@ -1,37 +1,23 @@
-/*
- * カモメSCのサイトを参考に、全体的にシンプルで分かりやすいデザインを目指しました。
- * 色はBootstrapの標準色をベースに、清潔感のある配色にしています。
- */
+/* ベースのスタイルは、提供された `carousel.css` を参考に、日本のユーザー向けに調整しました */
 
 /* 共通のスタイル */
 body {
-  padding-top: 56px; /* ナビゲーションバーの高さ分 */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #333; /* より見やすい文字色に */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #333;
 }
 
-/* ヒーローイメージ（トップの大きな画像）*/
-.hero-image {
-  height: 60vh;
-  background-image: url('https://via.placeholder.com/1920x1080.png?text=Hama+Club+Soft+Tennis');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.hero-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* 画像が見やすいようにオーバーレイを追加 */
-}
-
-.hero-image .container {
-  position: relative;
-  z-index: 1;
+/* カスタムカラーの定義（Bootstrapの標準色を使用）*/
+:root {
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
 }
 
 /* ナビゲーションバー */
@@ -39,25 +25,31 @@ body {
   font-weight: bold;
 }
 
-/* セクションの見出し */
-h2 {
-  font-weight: bold;
-  font-size: 2.5rem;
+/* カルーセル */
+.carousel {
+  margin-bottom: 4rem;
 }
 
-/* ニュースセクション */
-#news ul.list-group li {
-  font-size: 1.1rem;
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 文字が見やすくなるように影を追加 */
 }
 
-.news-link {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
+.carousel-item {
+  height: 32rem;
+  background-color: #777; /* 画像がない場合の背景色 */
 }
 
-.news-link:hover {
-  color: #0d6efd;
+.carousel-item img {
+  object-fit: cover; /* 画像がコンテナに収まるように設定 */
+}
+
+/* マーケティングコンテンツ（3つの列）*/
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* 特集セクション */
@@ -72,15 +64,38 @@ h2 {
 }
 
 .featurette-heading .text-body-secondary {
-  color: #6c757d !important;
+  color: var(--bs-secondary) !important;
 }
 
-/* メンバー紹介 */
-#members .rounded-circle {
+/* ニュースセクションのスタイル */
+#news .list-group-item {
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+
+/* ギャラリーの画像に少し影を追加 */
+#gallery img {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
 }
 
-/* フッター */
-footer a {
-  text-decoration: none;
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
