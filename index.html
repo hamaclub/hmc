@@ -22,7 +22,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about">チーム紹介</a>
+            <a class="nav-link active" aria-current="page" href="#news">ニュース</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">チーム紹介</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#members">選手・メンバー</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">フォトギャラリー</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#activity">活動内容</a>
@@ -94,63 +103,105 @@
   </div>
 
   <div class="container marketing">
-    <div id="about" class="row">
-      <div class="col-lg-4 text-center">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2 class="fw-normal mt-3">チーム紹介</h2>
-        <p>「浜クラブ」は、ソフトテニスを心から楽しむメンバーが集まったクラブチームです。</p>
-        <p><a class="btn btn-secondary" href="#about">詳細を見る &raquo;</a></p>
+    <section id="news" class="mb-5">
+      <h2 class="text-center fw-normal mb-4">最新ニュース</h2>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <ul class="list-group">
+            <li class="list-group-item"><strong>2023.10.26</strong> 〇〇大会で優勝しました！</li>
+            <li class="list-group-item"><strong>2023.10.20</strong> 練習会レポートを公開しました。</li>
+            <li class="list-group-item"><strong>2023.10.15</strong> ホームページをリニューアルしました。</li>
+            <li class="list-group-item"><strong>2023.10.10</strong> 〇〇選手が加入しました。</li>
+          </ul>
+        </div>
       </div>
-      <div class="col-lg-4 text-center">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2 class="fw-normal mt-3">活動内容</h2>
-        <p>毎週の練習会や、地域の大会への参加など、様々な活動を行っています。</p>
-        <p><a class="btn btn-secondary" href="#activity">詳細を見る &raquo;</a></p>
-      </div>
-      <div class="col-lg-4 text-center">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2 class="fw-normal mt-3">メンバー募集</h2>
-        <p>ソフトテニスが好きなら大歓迎！一緒に汗を流しましょう！</p>
-        <p><a class="btn btn-secondary" href="#recruitment">詳細を見る &raquo;</a></p>
-      </div>
-    </div>
+    </section>
 
     <hr class="featurette-divider">
 
-    <div id="activity" class="row featurette">
+    <section id="about" class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">毎週の練習会 <span class="text-body-secondary">スキルアップを目指そう。</span></h2>
-        <p class="lead">毎週土曜日の午前中に、〇〇公園テニスコートで練習を行っています。基礎練習からゲーム形式の練習まで、充実したメニューを用意しています。</p>
+        <h2 class="featurette-heading fw-normal lh-1">チーム紹介 <span class="text-body-secondary">ソフトテニスを楽しむ仲間たち。</span></h2>
+        <p class="lead">「浜クラブ」は、ソフトテニスを心から楽しむメンバーが集まったクラブチームです。競技志向からエンジョイ志向まで、様々なレベルのメンバーが在籍しています。毎週の練習会や地域の大会参加を通じて、ソフトテニスの楽しさを共有しています。</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://via.placeholder.com/500x500.png?text=Team+Intro+Image" class="img-fluid mx-auto" alt="チーム紹介のイメージ">
+      </div>
+    </section>
+
+    <hr class="featurette-divider">
+
+    <section id="members" class="mb-5">
+      <h2 class="text-center fw-normal mb-4">選手・メンバー紹介</h2>
+      <div class="row text-center">
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://via.placeholder.com/140x140.png?text=Member+1" alt="メンバー1">
+          <h3 class="fw-normal mt-3">田中 太郎</h3>
+          <p>ポジション: 前衛</p>
+        </div>
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://via.placeholder.com/140x140.png?text=Member+2" alt="メンバー2">
+          <h3 class="fw-normal mt-3">佐藤 花子</h3>
+          <p>ポジション: 後衛</p>
+        </div>
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://via.placeholder.com/140x140.png?text=Member+3" alt="メンバー3">
+          <h3 class="fw-normal mt-3">鈴木 健一</h3>
+          <p>ポジション: 後衛</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="featurette-divider">
+
+    <section id="gallery" class="mb-5">
+      <h2 class="text-center fw-normal mb-4">フォトギャラリー</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x300.png?text=Photo+1" class="img-fluid rounded" alt="ギャラリー写真1">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x300.png?text=Photo+2" class="img-fluid rounded" alt="ギャラリー写真2">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x300.png?text=Photo+3" class="img-fluid rounded" alt="ギャラリー写真3">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x300.png?text=Photo+4" class="img-fluid rounded" alt="ギャラリー写真4">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x300.png?text=Photo+5" class="img-fluid rounded" alt="ギャラリー写真5">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x300.png?text=Photo+6" class="img-fluid rounded" alt="ギャラリー写真6">
+        </div>
+      </div>
+    </section>
+
+    <hr class="featurette-divider">
+
+    <section id="activity" class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">活動内容 <span class="text-body-secondary">毎週の練習と大会参加。</span></h2>
+        <p class="lead">毎週土曜日の午前中に、〇〇公園テニスコートで練習を行っています。基礎練習からゲーム形式の練習まで、充実したメニューを用意しています。また、年に数回、地域のソフトテニス大会に参加し、日頃の練習の成果を試す絶好の機会となっています。</p>
       </div>
       <div class="col-md-5">
         <img src="https://via.placeholder.com/500x500.png?text=Practice+Image" class="img-fluid mx-auto" alt="練習風景">
       </div>
-    </div>
+    </section>
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">地域大会への参加 <span class="text-body-secondary">目標を持って取り組もう。</span></h2>
-        <p class="lead">年に数回、地域のソフトテニス大会に参加しています。日頃の練習の成果を試す絶好の機会です。</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="https://via.placeholder.com/500x500.png?text=Tournament+Image" class="img-fluid mx-auto" alt="大会での集合写真">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div id="recruitment" class="row featurette">
+    <section id="recruitment" class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">メンバー募集！ <span class="text-body-secondary">一緒にテニスを楽しみませんか？</span></h2>
-        <p class="lead">ソフトテニス経験者はもちろん、初心者の方も大歓迎です！ラケットの握り方から丁寧に指導します。まずはお気軽にご連絡ください。</p>
+        <p class="lead">ソフトテニス経験者はもちろん、初心者の方も大歓迎です！ラケットの握り方から丁寧に指導します。まずは一度、気軽に体験に来てみませんか？</p>
         <p><a class="btn btn-lg btn-primary" href="#contact">お問い合わせはこちら</a></p>
       </div>
       <div class="col-md-5">
         <img src="https://via.placeholder.com/500x500.png?text=Recruitment+Image" class="img-fluid mx-auto" alt="メンバー募集のイメージ画像">
       </div>
-    </div>
+    </section>
 
     <hr class="featurette-divider">
 
@@ -159,10 +210,4 @@
   <footer id="contact" class="container">
     <p class="float-end"><a href="#">ページの先頭へ</a></p>
     <p>&copy; 2023 浜クラブ. &middot; <a href="#">プライバシーポリシー</a> &middot; <a href="#">利用規約</a></p>
-    <p><strong>お問い合わせ:</strong> hamaclub.softtennis@example.com</p>
-  </footer>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-</html>
+    <p><strong>お問い合わせ:</strong> hamaclub.softtennis@example
