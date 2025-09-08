@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>〇〇ソフトテニスクラブ</title>
+    <title>HAMACLUB ソフトテニスクラブ</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="site-header">
         <div class="container">
-            <h1>〇〇ソフトテニスクラブ</h1>
-            <nav>
+            <div class="logo">
+                <img src="https://via.placeholder.com/80x80.png?text=LOGO" alt="クラブロゴ">
+            </div>
+            <h1>HAMACLUB</h1>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="#about">クラブ紹介</a></li>
                     <li><a href="#activities">活動内容</a></li>
-                    <li><a href="#news">ニュース</a></li>
+                    <li><a href="#members">メンバー紹介</a></li>
+                    <li><a href="#results">試合結果</a></li>
                     <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
             </nav>
@@ -22,56 +28,115 @@
     </header>
 
     <main>
-        <section id="hero" class="hero">
+        <section id="hero" class="hero-section">
             <div class="container">
-                <h2>最新の活動情報</h2>
-                <p>このセクションに、最新のお知らせや活動の写真を掲載します。</p>
+                <h2>ソフトテニスを楽しむ仲間を募集中！</h2>
+                <p>初心者から経験者まで、一緒に汗を流しませんか？</p>
+                <a href="#contact" class="btn btn-primary">見学・体験を申し込む</a>
             </div>
         </section>
 
-        <section id="about" class="section">
+        <section id="news" class="section news-section">
             <div class="container">
-                <h2>クラブ紹介</h2>
-                <p>ここにクラブの歴史や活動理念についての文章を入れます。</p>
-                <div class="image-placeholder"></div>
-            </div>
-        </section>
-
-        <section id="activities" class="section bg-light">
-            <div class="container">
-                <h2>活動内容</h2>
-                <p>練習日時、場所、参加条件などの情報を記載します。</p>
-            </div>
-        </section>
-
-        <section id="news" class="section">
-            <div class="container">
-                <h2>ニュース</h2>
-                <div class="news-list">
-                    <article>
-                        <h3>最新のお知らせタイトル1</h3>
-                        <p>お知らせの本文です。日付：2025年8月29日</p>
-                    </article>
-                    <article>
-                        <h3>最新のお知らせタイトル2</h3>
-                        <p>お知らせの本文です。日付：2025年8月20日</p>
-                    </article>
+                <h2>最新情報</h2>
+                <div class="news-item">
+                    <h3>練習試合の結果報告</h3>
+                    <p class="date">2025年8月29日</p>
+                    <p>先週末に行われた〇〇チームとの練習試合は、2勝3敗で惜しくも敗れました。次回の試合に向けて、さらに練習を重ねていきます！</p>
+                </div>
+                <div class="news-item">
+                    <h3>メンバー募集を開始しました！</h3>
+                    <p class="date">2025年8月20日</p>
+                    <p>新しい仲間を募集しています！詳細は「お問い合わせ」ページをご確認ください。</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section bg-light">
+        <section id="about" class="section about-section bg-light">
+            <div class="container">
+                <h2>クラブ紹介</h2>
+                <div class="about-content">
+                    <p>HAMACLUBは、ソフトテニスを通じて地域交流を深めることを目的に、2015年に結成されました。現在は20代から50代まで幅広い年齢層のメンバーが在籍しており、和気あいあいとした雰囲気で活動しています。</p>
+                    <p>チームの目標は、「勝つ喜び」と「楽しむ心」を両立させること。練習や試合を通じて、技術の向上だけでなく、メンバー同士の絆を深めることも大切にしています。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="section activities-section">
+            <div class="container">
+                <h2>活動内容</h2>
+                <div class="activity-info">
+                    <h3>練習日時・場所</h3>
+                    <p><strong>日時:</strong> 毎週土曜日・日曜日 9:00〜12:00</p>
+                    <p><strong>場所:</strong> 〇〇公園テニスコート</p>
+                    <div class="map-placeholder">
+                        
+                    </div>
+                </div>
+                <div class="activity-info">
+                    <h3>参加条件・費用</h3>
+                    <p><strong>参加条件:</strong> 経験者・未経験者問わず、ソフトテニスを楽しみたい方。性別・年齢不問。</p>
+                    <p><strong>費用:</strong> 入会費 3,000円、年会費 5,000円、練習参加費 500円/回（ボール代含む）</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="members" class="section members-section bg-light">
+            <div class="container">
+                <h2>メンバー紹介</h2>
+                <div class="member-grid">
+                    <div class="member-card">
+                        <img src="https://via.placeholder.com/150" alt="メンバー1">
+                        <h3>タロウ</h3>
+                        <p>一言: ソフトテニス歴10年！一緒に汗を流しましょう！</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="https://via.placeholder.com/150" alt="メンバー2">
+                        <h3>ハナコ</h3>
+                        <p>一言: 初心者でも大歓迎です！</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+        
+        <section id="results" class="section results-section">
+            <div class="container">
+                <h2>試合・大会結果</h2>
+                <div class="result-item">
+                    <h3>第5回〇〇杯ソフトテニス大会</h3>
+                    <p class="date">2025年8月15日</p>
+                    <p><strong>結果:</strong> 予選リーグ敗退</p>
+                    <p>惜しくも予選で敗退しましたが、次につながる良い経験になりました。当日の様子を写真でご覧ください。</p>
+                    <div class="photo-gallery">
+                        <img src="https://via.placeholder.com/200x150" alt="試合写真1">
+                        <img src="https://via.placeholder.com/200x150" alt="試合写真2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section bg-light">
             <div class="container">
                 <h2>お問い合わせ</h2>
-                <p>このセクションに、連絡先や問い合わせフォームへの案内を入れます。</p>
+                <p>見学や体験をご希望の方、練習試合のお申し込みなど、お気軽にご連絡ください。</p>
+                <div class="contact-form-placeholder">
+                    <a href="#" class="btn btn-secondary">お問い合わせフォームへ</a>
+                    <p>または、以下のメールアドレスにご連絡ください。</p>
+                    <p>Email: info@hamaclub.jp</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 〇〇ソフトテニスクラブ</p>
+            <div class="social-links">
+                <a href="#"><img src="https://via.placeholder.com/30" alt="X"></a>
+                <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2025 HAMACLUB. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
