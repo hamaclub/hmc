@@ -1,61 +1,86 @@
-/* ナビゲーションバーの調整 */
+/* ベースのスタイルは、提供された `carousel.css` を参考に、日本のユーザー向けに調整しました */
+
+/* 共通のスタイル */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #333; /* より見やすい文字色に */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* カスタムカラーの定義（Bootstrapの標準色を使用）*/
+:root {
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+}
+
+/* ナビゲーションバー */
 .navbar-brand {
   font-weight: bold;
 }
 
-/* ヒーローセクション（カルーセル）カスタマイズ */
+/* カルーセル */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 文字が見やすくなるように影を追加 */
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #777; /* 画像がない場合の背景色 */
+}
+
 .carousel-item img {
-  filter: brightness(60%); /* 画像を少し暗くして文字を見やすくする */
-}
-.carousel-caption h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-.carousel-caption p {
-  font-size: 1.25rem;
+  object-fit: cover; /* 画像がコンテナに収まるように設定 */
 }
 
-/* マーケティングセクション（3つのカラム）の調整 */
+/* マーケティングコンテンツ（3つの列）*/
 .marketing .col-lg-4 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.marketing .col-lg-4 img {
-  margin-bottom: 1rem;
-}
-.marketing .col-lg-4 h2 {
-  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-/* フィーチャレット（最新ニュース）セクションの調整 */
+/* 特集セクション */
 .featurette-divider {
   margin: 5rem 0;
 }
+
 .featurette-heading {
-  font-size: 2.5rem;
-}
-.news-list {
-  list-style-type: none;
-  padding: 0;
-}
-.news-list li {
-  margin-bottom: 10px;
-}
-.news-list a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -.05rem;
 }
 
-/* フッターの調整 */
-.container.footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.featurette-heading .text-body-secondary {
+  color: var(--bs-secondary) !important;
 }
 
-/* レスポンシブデザインの調整 */
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+/* レスポンシブデザイン */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
   }
 }
