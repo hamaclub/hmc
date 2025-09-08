@@ -1,244 +1,61 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    color: #444;
-    background-color: #f8f9fa;
+/* ナビゲーションバーの調整 */
+.navbar-brand {
+  font-weight: bold;
 }
 
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px 0;
+/* ヒーローセクション（カルーセル）のカスタマイズ */
+.carousel-item img {
+  filter: brightness(60%); /* 画像を少し暗くして文字を見やすくする */
+}
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 1.25rem;
 }
 
-/* ヘッダー */
-.site-header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+/* マーケティングセクション（3つのカラム）の調整 */
+.marketing .col-lg-4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.marketing .col-lg-4 img {
+  margin-bottom: 1rem;
+}
+.marketing .col-lg-4 h2 {
+  font-size: 1.75rem;
 }
 
-.site-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* フィーチャレット（最新ニュース）セクションの調整 */
+.featurette-divider {
+  margin: 5rem 0;
+}
+.featurette-heading {
+  font-size: 2.5rem;
+}
+.news-list {
+  list-style-type: none;
+  padding: 0;
+}
+.news-list li {
+  margin-bottom: 10px;
+}
+.news-list a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
 }
 
-.logo img {
-    border-radius: 50%;
+/* フッターの調整 */
+.container.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.site-header h1 {
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin: 0;
-}
-
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.main-nav a {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #555;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.main-nav a:hover {
-    color: #007bff;
-}
-
-/* ヒーローセクション */
-.hero-section {
-    background: #007bff url('https://via.placeholder.com/1500x500/007bff/fff?text=Soft+Tennis+Team') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.hero-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-}
-
-/* ボタン */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-primary {
-    background-color: #fff;
-    color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #e2e6ea;
-}
-
-.btn-secondary {
-    background-color: #3498db;
-    color: #fff;
-}
-
-.btn-secondary:hover {
-    background-color: #2980b9;
-}
-
-/* セクション共通 */
-.section {
-    padding: 60px 0;
-}
-
-.section h2 {
-    font-size: 2rem;
-    color: #007bff;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.bg-light {
-    background-color: #f4f4f4;
-}
-
-/* ニュースセクション */
-.news-item {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 5px solid #007bff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.news-item h3 {
-    margin: 0;
-    color: #333;
-}
-
-.news-item .date {
-    font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 10px;
-}
-
-/* 活動内容セクション */
-.activity-info {
-    margin-bottom: 30px;
-}
-
-.map-placeholder {
-    width: 100%;
-    height: 300px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #666;
-    margin-top: 20px;
-}
-
-/* メンバー紹介セクション */
-.member-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.member-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.member-card img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.member-card h3 {
-    color: #2c3e50;
-    margin-top: 0;
-}
-
-/* 試合結果セクション */
-.result-item {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.photo-gallery img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* お問い合わせセクション */
-.contact-form-placeholder {
-    text-align: center;
-}
-
-/* フッター */
-.site-footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9rem;
-}
-
-.social-links a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.social-links img {
-    border-radius: 50%;
-}
-
-@media (max-width: 768px) {
-    .site-header .container {
-        flex-direction: column;
-    }
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero-section {
-        padding: 50px 20px;
-    }
+/* レスポンシブデザインの調整 */
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
 }
